@@ -1,0 +1,14 @@
+C:\Users\Vondal\Documents\MeusProjetos\CampoMinado-Console-CSharp\bin\Debug\netcoreapp3.1\CampoMinado-Console-CSharp.exe
+C:\Users\Vondal\Documents\MeusProjetos\CampoMinado-Console-CSharp\bin\Debug\netcoreapp3.1\CampoMinado-Console-CSharp.deps.json
+C:\Users\Vondal\Documents\MeusProjetos\CampoMinado-Console-CSharp\bin\Debug\netcoreapp3.1\CampoMinado-Console-CSharp.runtimeconfig.json
+C:\Users\Vondal\Documents\MeusProjetos\CampoMinado-Console-CSharp\bin\Debug\netcoreapp3.1\CampoMinado-Console-CSharp.runtimeconfig.dev.json
+C:\Users\Vondal\Documents\MeusProjetos\CampoMinado-Console-CSharp\bin\Debug\netcoreapp3.1\CampoMinado-Console-CSharp.dll
+C:\Users\Vondal\Documents\MeusProjetos\CampoMinado-Console-CSharp\bin\Debug\netcoreapp3.1\CampoMinado-Console-CSharp.pdb
+C:\Users\Vondal\Documents\MeusProjetos\CampoMinado-Console-CSharp\obj\Debug\netcoreapp3.1\CampoMinado-Console-CSharp.csproj.AssemblyReference.cache
+C:\Users\Vondal\Documents\MeusProjetos\CampoMinado-Console-CSharp\obj\Debug\netcoreapp3.1\CampoMinado-Console-CSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vondal\Documents\MeusProjetos\CampoMinado-Console-CSharp\obj\Debug\netcoreapp3.1\CampoMinado-Console-CSharp.AssemblyInfoInputs.cache
+C:\Users\Vondal\Documents\MeusProjetos\CampoMinado-Console-CSharp\obj\Debug\netcoreapp3.1\CampoMinado-Console-CSharp.AssemblyInfo.cs
+C:\Users\Vondal\Documents\MeusProjetos\CampoMinado-Console-CSharp\obj\Debug\netcoreapp3.1\CampoMinado-Console-CSharp.csproj.CoreCompileInputs.cache
+C:\Users\Vondal\Documents\MeusProjetos\CampoMinado-Console-CSharp\obj\Debug\netcoreapp3.1\CampoMinado-Console-CSharp.dll
+C:\Users\Vondal\Documents\MeusProjetos\CampoMinado-Console-CSharp\obj\Debug\netcoreapp3.1\CampoMinado-Console-CSharp.pdb
+C:\Users\Vondal\Documents\MeusProjetos\CampoMinado-Console-CSharp\obj\Debug\netcoreapp3.1\CampoMinado-Console-CSharp.genruntimeconfig.cache

@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Vondal\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Vondal\\.nuget\\packages"
+    ]
+  }
+}
