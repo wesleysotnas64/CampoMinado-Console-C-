@@ -7,7 +7,9 @@ namespace CampoMinado_Console_CSharp
         static void Main(string[] args)
         {
             Board board = new Board();
-            Console.WriteLine("Rodou!");
+            Game  game  = new Game(board);
+            game.ResetBoard();
+            game.Show();
         }
     }
 }
