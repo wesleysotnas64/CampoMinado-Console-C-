@@ -6,6 +6,7 @@ namespace CampoMinado_Console_CSharp
     {
         private int[,]  board;
         private bool[,] boardRevel;
+        private bool[,] boardFlag;
         private int     size;
         
         public Board(int n =  3)
@@ -13,6 +14,7 @@ namespace CampoMinado_Console_CSharp
             Size   = n;
             board  = new int[Size,Size];
             boardRevel = new bool[Size,Size];
+            boardFlag = new bool[Size,Size];
             
             for(int i = 0; i < Size; i++)
             {
@@ -20,6 +22,7 @@ namespace CampoMinado_Console_CSharp
                 {
                     board[i,j] = 0;
                     boardRevel[i,j] = false;
+                    boardFlag[i,j] = false;
                 }
             }
         }
@@ -75,6 +78,14 @@ namespace CampoMinado_Console_CSharp
                 boardRevel[i,j] = true;
             }
         }
+
+        public void Flag(int i, int j)
+        {
+            if(Inside(i,j))
+            {
+                boardFlag[i,j] = true;
+            }
+        }
         
         public void Show()
         {
@@ -96,6 +107,9 @@ namespace CampoMinado_Console_CSharp
                     if(boardRevel[i,j])
                     {
                         Console.Write(CountAdjacency(i,j));
+                    } else if(boardFlag[i,j])
+                    {
+                        Console.Write("F");
                     }
                     else
                     {
@@ -145,6 +159,16 @@ namespace CampoMinado_Console_CSharp
             return this.board[i,j];
         }
         
+        public bool FlagIn(int i, int j)
+        {
+            return boardFlag[i,j];
+        }
+
+        public bool RevelIn(int i, int j)
+        {
+            return boardRevel[i,j];
+        }
+
         public int ValueInSelected(int i, int j)
         {
             if(boardRevel[i,j]) return 1;

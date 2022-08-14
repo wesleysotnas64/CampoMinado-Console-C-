@@ -17,7 +17,7 @@ namespace CampoMinado_Console_CSharp
 
             board.Show();
 
-            SelectClick();
+            ClickOrFlag();
         }
 
         public void SelectClick()
@@ -30,6 +30,41 @@ namespace CampoMinado_Console_CSharp
             j = Convert.ToInt32(Console.ReadLine());
 
             ClickIn(i,j);
+        }
+
+        public void SelectFlag()
+        {
+            int i, j;
+
+            Console.Write("Linha : ");
+            i = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Coluna: ");
+            j = Convert.ToInt32(Console.ReadLine());
+
+            FlagIn(i,j);
+        }
+
+        public void ClickOrFlag()
+        {
+            int option;
+            Console.WriteLine("[1] Cavar");
+            Console.WriteLine("[2] Marcar");
+            Console.Write("-> ");
+            option = Convert.ToInt32(Console.ReadLine());
+            
+            switch (option)
+            {
+                case 1:
+                    SelectClick();
+                    break;
+                
+                case 2:
+                    SelectFlag();
+                    break;
+                default:
+                    Show();
+                    break;
+            }
         }
 
         public void ClickIn(int i, int j)
@@ -49,6 +84,21 @@ namespace CampoMinado_Console_CSharp
             }
         }
         
+        public void FlagIn(int i, int j)
+        {
+            i--;
+            j--;
+
+            if(board.Inside(i,j))
+            {
+                if(!board.RevelIn(i,j))
+                {
+                    board.Flag(i,j);
+                }
+            }
+            VerifyEndGame();
+        }
+
         public void VerifyEndGame()
         {
             int nBombs = CountNumberBombs();
@@ -114,8 +164,6 @@ namespace CampoMinado_Console_CSharp
             }
 
         }
-
-
 
         public int CountNumberSelected()
         {
